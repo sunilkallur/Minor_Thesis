@@ -1,0 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Using KTHEEtitlepage_ex.tex
+%
+% Example of how to use the KTHEEtitlepage package.
+% 
+% First Version : Mats Bengtsson,  7/8 2006
+% Version 2 : Sunil Kallur Ramegowda, 8/3/2015
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[exjobb]{KTHEEtitlepage}
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% Packages used in the main document for this particular example:
+\usepackage{url}
+\usepackage{tocloft}
+\usepackage{hyperref}
+\hypersetup{%
+    pdfborder = {0 0 0}
+}
+
+\usepackage[exjobb]{KTHEEtitlepage}
+
+
+\begin{document}
+% Information to appear on the title page:
+\ititle{Lumingo : Smart Backup Systems }
+\isubtitle{}
+\iauthor{- Sunil Kallur Ramegowda}
+
+\idate{2015}
+
+
+\iaddress{ICT Labs\\
+  Major in Embedded Platforms\\
+  Kungliga Tekniska Högskolan}
+%\irefnr{IR-EE-Dummy 2000:099}
+\makeititle
+
+% Everything below is exactly as for a normal document and 
+% the layout of that document should not be affected in any
+% way by the title page.
+
+\title{Lumingo : Smart Backup Systems}
+\author{Sunil Kallur Ramegowda}
+
+\maketitle
+\pagenumbering{roman}
+
+
+\begin{abstract}
+  The objective of this minor thesis is to perform the Literature study,Market research,competitor analysis, Hardware implementation and Result analysis of the Smart backup Systems.Electrical energy is the need for development. There are many ways of generating the electricity commercially like Hydroelectric power plants,Wind Mills,Nuclear Reactors,Solar Panels,Thermal reactors etc. Because of avoiding the hazardous effects from the Nuclear and Thermal power plants most of the nations are concentrating on renewable sources of energy like Solar and Windmills. This is also leading to the decentralization of the power generation into small grid like structure. The maintenance of these small grids centrally will give us more options of generating and utilizing the energy in a more efficient way.\\
+  
+  Grid based electricity manufacturing is already an existing technology in most of the developed countries in Europe like Germany,Estonia,\\Sweden etc. The Grids are locally managed using the SCADA PLC programming. The control decisions are all local and the real time decision based on the overall available data in the grids are not considered in the present techniques.\\
+  
+  Reaching the Grid owners or having access to the grid data is bit difficult without being in the industry. We as a team LuminGo have considered this as our proposal and have got the grant to show the first prototype to the SpeedUp Europe Accelerator program. The algorithm which will help to make the new IOT (Internet of Things) based technology in cleantech Energy is being supported by the European Union.   
+\end{abstract}
+
+\addcontentsline{toc}{section}{Abstract}
+\cleardoublepage
+
+
+
+
+%\phantomsection
+
+\renewcommand\contentsname{\centerline{\underline{\underline{Table of Contents}}}}
+\tableofcontents
+\addcontentsline{toc}{section}{Table of Contents}
+\cleardoublepage
+
+
+%\renewcommand\listfigurename{List of Figures}
+
+\listoffigures
+\addcontentsline{toc}{section}{List of Figures}
+\cleardoublepage
+
+\renewcommand\listtablename{List of Tables}
+\listoftables
+\addcontentsline{toc}{section}{List of Tables}
+\clearpage
+
+
+
+\pagenumbering{arabic}
+
+\section{Introduction}
+
+Electrical Energy is a vital need for everyday life as we are depending on machines where most of them need electrical energy to perform their task.There are many ways of generating electricity and then storing it to use it according to the need. Batteries are used to store Electrical energy in the form of chemical energy, but the innovations in battery technologies are still not advanced and is a big problem for the society.So efficient use of the generated power and its storage are necessary.Renewable sources of energy like Solar panel and Bio Mass are famous as they do not have extracts which are harmful to the nature when compared to the Nuclear power plants.Generating power using technologies like Wind,Solar,Bio Mass etc are feasible and countries like India,Uganda,Germany etc are supporting for such implementations.\\
+
+When the grids increase in numbers their maintenance and operational decisions need to be smart for optimized and efficient power generation and utilization.In the present day there are challenges because of unreliable grids and power generators which generate frequent power outages when the power production does not meet the requirement. Our concept is a smart grid system that will integrate the 
+individual backup power systems in the overall grid management.\\
+
+There are many algorithms designed for making the overall system efficient and robust. We need to collect data from each of the Backup systems and our algorithm will make dynamic decisions in the central server.We are proposing to make the complete system Smart using the FIWARE cloud platform which is being sponsored from the European Union. I am working as one among the CTO who has to research and design the Embedded Hardware to capture the data and also to send it to the cloud using GPRS/GSM technology for further processing.
+
+
+
+\clearpage
+
+
+\section{Literature Study}
+
+
+\clearpage
+
+\section{Market Survey}
+\clearpage
+
+\section{Results}
+\clearpage
+
+\section{Future Work}
+\clearpage
+
+
+\section{References}
+\clearpage
+
+
+
+%
+%\section{How to Use the Package}
+%Once you have finished your paper/report/thesis/\dots, just add the 
+%following line somewhere before \verb+\begin{document}+:
+%\begin{verbatim}
+%\usepackage[ireport]{KTHEEtitlepage}
+%\end{verbatim}
+%and following commands just below \verb+\begin{document}+:
+%\begin{verbatim}
+%\ititle{My Title}
+%\isubtitle{My Subtitle}
+%\iauthor{Me and Myself}
+%\idate{2004}
+%\irefnr{IR-EE-SB 2000:099}
+%\iaddress{Signal Processing\\
+%  School of Electrical Engineering\\
+%  Kungliga Tekniska Högskolan}
+%\makeititle
+%\end{verbatim}
+%
+%This will add a front page following (as far as possible) the layout
+%proposed at \url{http://www.kth.se/internt/grafiskprofil/rapporter} in
+%the example ``Exempel 2 omslag rapport'' (which admittedly is the
+%least fancy of the tree examples, but also the one that is most likely
+%to look well when printed on a black/white printer). 
+%
+%Note that the layout of the original document will remain untouched,
+%only a new front page is added. If your original document is typeset
+%for double sided print (using the \verb+twoside+ option to
+%\verb+\documentclass+, then an empty page will be added after the
+%front page, so the main document starts on a left side. 
+%
+%
+%\subsection{Package Options}
+%
+%The following options are available
+%\begin{description}
+%\item[ireport] Front page with layout for internal reports
+%\item[lic] Front page with layout for licentiate thesis
+%\item[doktor] Front page with layout for PhD dissertations.
+%\item[exjobb (default)] Front page with layout for masters thesis.
+%\item[eng (default)] Logotype and text in English
+%\item[sve] Logotype and text in Swedish
+%\item[forWWW (default)] Full layout in color, for WWW publishing.
+%\item[forPrint] Only the text in black and white, for use when the
+%  front page will be copied on a preprinted paper that already has the
+%  logotype and background color. 
+%\end{description}
+%
+%
+%\subsection{Optional Commands}
+%
+%For web publication of documents from IEEE publications, one of the
+%following commands can be used (above \verb+\makeititle+), to add the
+%corresponding standard IEEE copyright notice (see the link on ``
+%Electronic Information Dissemination'' at
+%\url{http://www.ieee.org/web/publications/rights/polilink_new.html} 
+%for more information). 
+%
+%\begin{description}
+%\item[\texttt{$\backslash$submittedIEEE\{\textit{year\}}}] For documents
+%  submitted to, but not yet accepted by, an IEEE conference or
+%  journal. 
+%\item[\texttt{$\backslash$publishedIEEE\{\textit{year\}}}] For documents
+%  copyrighted by an IEEE conference or journal. 
+%\end{description}
+%
+%These commands only apply to internal reports, not to any of the
+%thesis options.
+
+\end{document}
