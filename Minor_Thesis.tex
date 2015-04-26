@@ -9,8 +9,16 @@
 \documentclass[12pt,a4paper]{article}
 
 \usepackage[exjobb]{KTHEEtitlepage}
+\usepackage{url}
+\usepackage{tocloft}
+\usepackage{hyperref}
+\usepackage{filecontents,lipsum}
 \usepackage{tocloft}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\usepackage[noadjust]{cite}
+\graphicspath{{pictures/}}
+\usepackage{booktabs}
+\usepackage[table,xcdraw]{xcolor}
 
 % Packages used in the main document for this particular example:
 \usepackage{url}
@@ -100,94 +108,153 @@ There are many algorithms designed for making the overall system efficient and r
 \clearpage
 
 
-\section{Literature Study}
+\section{Literature Analysis}
+M2M(Machine to Machine) interaction is expected to be the next generation of research goal in all sectors to make the human life better.Semiconductors,  Networking and Software firms are building the next products which support for the easy integration of such applications.The cost of adding connectivity to a device has fallen significantly (less than 5dollars!).The energy consumption of these tiny modules which communicate with radio is also significantly reduced such that they are able to work standalone with batteries for almost a year\cite{maulik}.Sensors which collects such data and store them in real time or near real time are of great importance for development of new applications with different market strategies. The energy sector is also facing such fast integration of technological advancements for the better management of electrical energy.The need for integrating all such devices to be able to control,monitor and switch from remote location based on their status leads to infinite possibilities of innovation.\\
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=1]{smartgrid2}
+    \caption{Smart Grid concept\cite{smartgrid}}
+    \label{fig:Fig1}
+\end{figure}
+
+
+The Energy generation and distribution model is different in each country. But the need for making optimal usage of the produced energy exist everywhere.Making the Grids  "Smart" is now the need of the society.The smart metering is one part of the Smart grid concept wherein the meters at individual location will collect and store the data in central cloud for further processing or usage for different applications in future.The installation and replacements of smart meters alone in Europe has the range of 12 to 17 million units\cite{BergInsight}.The estimated growth rate of smart meters is 18.5 percent between 2013 and 2019 to reach 170.1 million units at the end of the period.According to the statistics\cite{BergInsight}, thirteen European countries had developed regulatory road maps for the full scale introduction of the smart electricity meters.\\ 
+
+
+
+As in Fig.~\ref{fig:Fig1},A smart Grid can be defined as the process of efficient use of energy from the point of generation to distribution till consumption at the consumer end.Therefore intelligence needs to be build to make decisions on real time or near real time for the system to work.This needs the sensors and actuator systems to collect data and take action respectively.All forms of energy generation and consuming units can be integrated into this system for the best efficient algorithms to make intelligent decisions.\\
+
+
+
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.5]{GMS-platform}
+    \caption{Grid Software Functions\cite{smartgrid}}
+    \label{fig:Fig2}
+\end{figure}
+
+
+
+
+The Smart grid software which is presently used are the SCADA based systems. One such system from the company OSII is shown in Fig.~\ref{fig:Fig2}.There are many functionalities and decisions which can be performed based on the data collected or from the connected systems.The general decision like where the power outage has to happen based on location or number of energy consumptions can be achieved by the grid owners in an autonomous way or even manual way.
+
+The Fig.~\ref{fig:Fig3} explains the statistics of the Smart grid progress in Europe performed by Joint Research Centre,Institute for Energy and Transport(\url{http://ses.jrc.ec.europa.eu/smart-grids-observatory}).As indicated the overall market in last one decade is amounting to 3.15 billion Euros of investment.\\
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.45]{EU_report}
+    \caption{Survey of EU Smart Grid in 2014 \cite{EUreport}}
+    \label{fig:Fig3}
+\end{figure}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+
+
+There are many big companies like ABB\cite{ABB},Schneider\cite{Schneider} in this market which hold the major equipments sales. The new startup define their business model such that they become collaborative partners than competitors,which is the similar case with LuminGo AB.We are concentrating to enter the market through developing countries like India,Pakistan and African countries.Based on the funding we have received from the European Union, part of it is being spent on the hardware prototype development.The hardware is similar to the smart meter which also includes the actuators to perform connect/disconnect operation from remote location i.e through the grid management software.The business model also concentrates on controlling the gas and water meters from the central location as the overall system is similar except the actuation hardware at the consumer end.\\
+
+The state of the art in the developing countries is similar to the path of technological advancement in developed countries.Pamoja AB which is the parent company of LuminGo AB has 2 grids setup in Uganda which are used for rural electrification\cite{pamoja}.The idea of optimally utilizing the electricity generated necessitated the  need of a central control.Research on the need and present day problem faced by the electricidy grids in Uganda shows an average estimate of 16k power outages in Uganda. With the Grid Management software with the necessary hardware for controlling it can make the system more reliable and efficient.We are planning to show the proof of concept to give the projection of the savings to the energy companies.\\
+
+Recent developments in India has also shown the adaption of these techniques to manage the system more efficiently.Cyan Technology, an UK based company has got the first public pilot project in the Southern Indian region.This involves the intstallation of 21k smart meters replacing the old technology meters.These smart meters can perform more functions and it becomes easier to monitor the system.The Overall estimate of the project is greater than 1M Pounds\cite{Cyan}.The Smart cities project initiated by the Government of India\cite{india}, has also proposed the integration of energy management concept which results in the investment. 
+
 
 
 \clearpage
 
-\section{Market Survey}
-\clearpage
-
-\section{Results}
-\clearpage
-
-\section{Future Work}
-\clearpage
 
 
-\section{References}
-\clearpage
+\begin{filecontents*}{references.bib}
+    
+    
+    @misc{maulik,
+        author = {Maulik,Sunil},
+        title = {Trends in infrastructure: the Internet of Things},
+        howpublished = {\url{http://www.oracle.com/us/corporate/profit/big-ideas/012314-smaulik-2112685.html}},
+        year = {2014},
+        note = {Accessed: 2015-04-20}
+    }
+    
+    @misc{BergInsight,
+        author = {Ryberg Tobias},
+        title = {Smart Metering in Europe },
+        howpublished = {\url{http://www.berginsight.com/ReportPDF/ProductSheet/bi-sm10-ps.pdf}},
+        year = {2014},
+        note = {Accessed: 2015-04-20}
+    }
+     @misc{smartgrid,
+         author = {},
+         organization = {OSI,powering the future},
+         title = {Smart grid concept },
+         howpublished = {\url{http://www.osii.com/solutions/initiatives/smartgrid.asp}},
+         year = {2014},
+         note = {Accessed: 2015-04-20}
+        }
+     @misc{EUreport,
+         author = {},
+         organization = {Joint Research Centre,Institute for Energy and Transport},
+         title = {Smart Grid Projects Outlook 2014 },
+         howpublished = {\url{http://ses.jrc.ec.europa.eu/smart-grids-observatory}},
+         year = {2014},
+         note = {Accessed: 2015-04-20}
+        }
+        
+        @misc{EUreport,
+            author = {},
+            title = {ABB Ltd },
+            howpublished = {\url{ http://new.abb.com/about/technology/data-centers/gridconnection}},
+            year = {2015},
+            note = {Accessed: 2015-04-21}
+        }
+        @misc{ABB,
+            author = {},
+            title = {ABB Ltd },
+            howpublished = {\url{ http://new.abb.com/about/technology/data-centers/gridconnection}},
+            year = {2015},
+            note = {Accessed: 2015-04-21}
+        }
+         @misc{Schneider,
+             author = {},
+             title = {Schneider Electric},
+             howpublished = {\url{ http://www2.schneider-electric.com/sites/corporate/en/products-services/smart-grid-solutions/smart-grid-solutions.page}},
+             year = {2015},
+             note = {Accessed: 2015-04-21}
+            }
+    @misc{pamoja,
+        author = {},
+        title = {Pamoja AB},
+        howpublished = {\url{ http://pamoja.se/}},
+        year = {2011},
+        note = {Accessed: 2015-04-21}
+    }
+    
+    @misc{cyan,
+        author = {},
+        title = {Cyan Technology},
+        howpublished = {\url{http://www.cyantechnology.com/articles/1m-order-public-utility-smart-metering-project-india/}},
+        year = {2011},
+        note = {Accessed: 2015-04-21}
+    }
+    
+    @misc{india,
+        author = {},
+        title = {India: Smart Cities},
+        howpublished = {\url{http://indiansmartcities.in/Site/index.aspx}},
+        year = {2011},
+        note = {Accessed: 2015-04-21}
+    }
+    
+    
+   
+    
+    
+\end{filecontents*}
+\bibliographystyle{ieeetr}
+\bibliography{references}
+\addcontentsline{toc}{section}{References}
 
-
-
-%
-%\section{How to Use the Package}
-%Once you have finished your paper/report/thesis/\dots, just add the 
-%following line somewhere before \verb+\begin{document}+:
-%\begin{verbatim}
-%\usepackage[ireport]{KTHEEtitlepage}
-%\end{verbatim}
-%and following commands just below \verb+\begin{document}+:
-%\begin{verbatim}
-%\ititle{My Title}
-%\isubtitle{My Subtitle}
-%\iauthor{Me and Myself}
-%\idate{2004}
-%\irefnr{IR-EE-SB 2000:099}
-%\iaddress{Signal Processing\\
-%  School of Electrical Engineering\\
-%  Kungliga Tekniska Högskolan}
-%\makeititle
-%\end{verbatim}
-%
-%This will add a front page following (as far as possible) the layout
-%proposed at \url{http://www.kth.se/internt/grafiskprofil/rapporter} in
-%the example ``Exempel 2 omslag rapport'' (which admittedly is the
-%least fancy of the tree examples, but also the one that is most likely
-%to look well when printed on a black/white printer). 
-%
-%Note that the layout of the original document will remain untouched,
-%only a new front page is added. If your original document is typeset
-%for double sided print (using the \verb+twoside+ option to
-%\verb+\documentclass+, then an empty page will be added after the
-%front page, so the main document starts on a left side. 
-%
-%
-%\subsection{Package Options}
-%
-%The following options are available
-%\begin{description}
-%\item[ireport] Front page with layout for internal reports
-%\item[lic] Front page with layout for licentiate thesis
-%\item[doktor] Front page with layout for PhD dissertations.
-%\item[exjobb (default)] Front page with layout for masters thesis.
-%\item[eng (default)] Logotype and text in English
-%\item[sve] Logotype and text in Swedish
-%\item[forWWW (default)] Full layout in color, for WWW publishing.
-%\item[forPrint] Only the text in black and white, for use when the
-%  front page will be copied on a preprinted paper that already has the
-%  logotype and background color. 
-%\end{description}
-%
-%
-%\subsection{Optional Commands}
-%
-%For web publication of documents from IEEE publications, one of the
-%following commands can be used (above \verb+\makeititle+), to add the
-%corresponding standard IEEE copyright notice (see the link on ``
-%Electronic Information Dissemination'' at
-%\url{http://www.ieee.org/web/publications/rights/polilink_new.html} 
-%for more information). 
-%
-%\begin{description}
-%\item[\texttt{$\backslash$submittedIEEE\{\textit{year\}}}] For documents
-%  submitted to, but not yet accepted by, an IEEE conference or
-%  journal. 
-%\item[\texttt{$\backslash$publishedIEEE\{\textit{year\}}}] For documents
-%  copyrighted by an IEEE conference or journal. 
-%\end{description}
-%
-%These commands only apply to internal reports, not to any of the
-%thesis options.
 
 \end{document}
