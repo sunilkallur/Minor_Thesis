@@ -14,6 +14,7 @@
 \usepackage{hyperref}
 \usepackage{filecontents,lipsum}
 \usepackage{tocloft}
+usepackage{graphicx}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \usepackage[noadjust]{cite}
 \graphicspath{{pictures/}}
@@ -172,6 +173,23 @@ The survey results helped us to understand the market where we are trying to est
 
 Similar market study and meetings were held with other developed countries in Estonia and Sweden(The names are not disclosed based on their request).The systems differ with respect to region.Based on the customer feedback, we started working on making our concept more ready for customer.In Uganda, the working model with UMEME is either with postpaid or prepaid connection.The connection provides electricity to the household,utility buildings or for retailers.This system doesn't exist in most of the European countries like Sweden,Germany,Estonia where we carried our initial survey.\\
 
+The cost for per unit or KWh electricity differs based on customer segment.The real time calculation of demand and cost based on the type of customers account are managed by the present day SCADA systems.UMEME currently has more than 500,000 customers which includes Domestic consumers,Commercial consumers,Medium scale industrial consumers and large scale industrial consumers
+
+\begin{table}[h]
+    \centering
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline
+            \textbf{Type}                      & \textbf{Average} & \textbf{\begin{tabular}[c]{@{}c@{}}Peak\\ (18:00 to 23:00)hours\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Shoulder\\ (05:00 to 18:00)hours\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Offpeak\\ (23:00 to 05:00)hours\end{tabular}} \\ \hline
+            Domestic Consumers Charge          & \multicolumn{4}{c|}{\begin{tabular}[c]{@{}c@{}}150 : For the first 15Units in the month\\ 531.5 : For usage above 15Units\end{tabular}}                                                                                                                                 \\ \hline
+            Commercial Consumers Charge        & 484.6            & 602.5                                                                         & 485.1                                                                             & 336.5                                                                            \\ \hline
+            Medium industrial Consumers Charge & 461.6            & 570.1                                                                         & 461.9                                                                             & 314.5                                                                            \\ \hline
+            Large industrial Consumers Charge  & 315.6            & 383.5                                                                         & 316.4                                                                             & 233.0                                                                            \\ \hline
+        \end{tabular}
+    }
+    \caption{My caption}
+    \label{my-label}
+\end{table}
    
 
 
