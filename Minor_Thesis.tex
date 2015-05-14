@@ -175,24 +175,22 @@ Similar market study and meetings were held with other developed countries in Es
 
 The cost for per unit or KWh electricity differs based on customer segment.The real time calculation of demand and cost based on the type of customers account are managed by the present day SCADA systems.UMEME currently has more than 500,000 customers which includes Domestic consumers,Commercial consumers,Medium scale industrial consumers and large scale industrial consumers
 
+
 \begin{table}[h]
     \centering
-    \begin{tabular}{|c|c|c|c|c|}
-        \hline
-        \textbf{Type}                      & \textbf{Average} & \textbf{\begin{tabular}[c]{@{}c@{}}Peak\\ (18:00 to 23:00)hours\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Shoulder\\ (05:00 to 18:00)hours\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Offpeak\\ (23:00 to 05:00)hours\end{tabular}} \\ \hline
-        Domestic Consumers Charge          & \multicolumn{4}{c|}{\begin{tabular}[c]{@{}c@{}}150 : For the first 15Units in the month\\ 531.5 : For usage above 15Units\end{tabular}}                                                                                                                                 \\ \hline
-        Commercial Consumers Charge        & 484.6            & 602.5                                                                         & 485.1                                                                             & 336.5                                                                            \\ \hline
-        Medium industrial Consumers Charge & 461.6            & 570.1                                                                         & 461.9                                                                             & 314.5                                                                            \\ \hline
-        Large industrial Consumers Charge  & 315.6            & 383.5                                                                         & 316.4                                                                             & 233.0                                                                            \\ \hline
-    \end{tabular}
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{@{}ccccc@{}}
+            \toprule
+            \textbf{Type}                                                                                       & \textbf{Average}           & \textbf{\begin{tabular}[c]{@{}c@{}}Peak\\ (18:00 to 23:00)hours\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Shoulder\\ (05:00 to 18:00)hours\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Offpeak\\ (23:00 to 05:00)hours\end{tabular}} \\ \midrule
+            \multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Domestic \\ Consumers Charge\end{tabular}}          & \multicolumn{4}{c|}{\begin{tabular}[c]{@{}c@{}}150 : For the first 15Units in the month\\ 531.5 : For usage above 15Units\end{tabular}}                                                                                                                                           \\ \midrule
+            \multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Commercial \\ Consumers Charge\end{tabular}}        & \multicolumn{1}{c|}{484.6} & \multicolumn{1}{c|}{602.5}                                                    & \multicolumn{1}{c|}{485.1}                                                        & \multicolumn{1}{c|}{336.5}                                                       \\ \midrule
+            \multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Medium industrial \\ Consumers Charge\end{tabular}} & \multicolumn{1}{c|}{461.6} & \multicolumn{1}{c|}{570.1}                                                    & \multicolumn{1}{c|}{461.9}                                                        & \multicolumn{1}{c|}{314.5}                                                       \\ \midrule
+            \begin{tabular}[c]{@{}c@{}}Large industrial \\ Consumers Charge\end{tabular}                        & 315.6                      & 383.5                                                                         & 316.4                                                                             & 233.0                                                                            \\ \bottomrule
+        \end{tabular}
+    }
     \caption{My caption}
     \label{my-label}
 \end{table}
-
-
-\clearpage
-
-
 
 \begin{filecontents*}{references.bib}
     
