@@ -34,9 +34,11 @@
 
 \begin{document}
 % Information to appear on the title page:
-\ititle{Lumingo : Smart Backup Systems }
-\isubtitle{}
-\iauthor{- Sunil Kallur Ramegowda}
+\ititle{Smart Backup Systems \\Lumingo AB }
+\isubtitle{Author:\\Sunil Kallur Ramegowda\\
+           Supervisor:\\Aziza Al Ghafri\\
+           Examiner:\\Professor Terrence Brown}
+\iauthor{}
 
 \idate{2015}
 
@@ -164,6 +166,21 @@ Recent developments in India has also shown the adaption of these techniques to 
 
 \clearpage
 
+\section{Funding}
+
+Lumingo team was fist met in November 2014.After a month of meeting and discussions our idea got matured.We started advertising our concept with people around the industry about the market and feasibility of our concept.This was done through meetings,conferences and even video calls with customers in different continents.All these happened in a very short period which helped Lumingo to search for investors.Meanwhile the FIWARE cloud based system was offered by the European Union for the early startups for free.This involves the prototyping and testing.All the high end resources were offered for free for all the customers.\\
+
+Meanwhile Speedupeurope Accelerator program opened its application for the early startups. Lumingo got the funding which includes expense upto 70k Euros. In April after the MVP(Minimum Viable Product) evaluation of all 100 startups which got funding, Lumingo is in top 20 and we are very happy about this achievement. As part of the program we are operating from the Stockholm node and updates are evaluated on regular basis from our Sting partner and mentor Mr.Magnus Rehn.\\
+
+As in startup we need to work more than 100\% and i have been involved in many other activities than technical.The work involves attending technical conferences,updating the mentor,weekly reporting to speedupeurope maintaining the technical team and fixing the technical issues at FIWARE cloud.\\
+
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.35]{card}
+    \caption{Business card}
+    \label{card}
+\end{figure}
 
 \section{Product and Market Entry}
 
@@ -173,10 +190,15 @@ The survey results helped us to understand the market where we are trying to est
 
 Similar market study and meetings were held with other developed countries in Estonia and Sweden(The names are not disclosed based on their request).The systems differ with respect to region.Based on the customer feedback, we started working on making our concept more ready for customer.In Uganda, the working model with UMEME is either with postpaid or prepaid connection.The connection provides electricity to the household,utility buildings or for retailers.This system doesn't exist in most of the European countries like Sweden,Germany,Estonia where we carried our initial survey.\\
 
-The cost for per unit or KWh electricity differs based on customer segment.The real time calculation of demand and cost based on the type of customers account are managed by the present day SCADA systems.UMEME currently has more than 500,000 customers which includes Domestic consumers,Commercial consumers,Medium scale industrial consumers and large scale industrial consumers.
+The cost for per unit or KWh electricity differs based on customer segment.The real time calculation of demand and cost based on the type of customers account are managed by the present day SCADA systems.UMEME currently has more than 500,000 customers which includes Domestic consumers,Commercial consumers,Medium scale industrial consumers and large scale industrial consumers.\\
 
 
-Table.~\ref{Tab1} explains how the cost differs on many factors\cite{umeme}.UMEME has launched YaKa\cite{yaka} which allows the end customer to monitor the electricity usage and also to recharge with new amount for further usage.The customer is facing a problem with this new technology.The electricity theft is very common in Uganda according to the professionals. They are facing challenges in identifying the theft in real time. They are in need of a technology to identify the theft and inform the relevant officer to correct the system and for further action.\\
+Table.~\ref{Tab1} explains how the cost differs on many factors\cite{umeme}.The business model of UMEME is to encourage customers to use electricity at non peak hours for activities which are not critical in peak hours.This way the production cost for the electricity becomes less expensive during off peak hours.UMEME maintains additional grids to switch on during peak hours if the demand goes beyond production to avoid power outage.The cost for this additional grid is very high.It will not be used for full time as the peak usage is very narrow time bound.Hence small optimizations of usage at peak hours is of great importance to the customer.\\ 
+
+
+
+
+UMEME has launched YaKa\cite{yaka} which allows the end customer to monitor the electricity usage and also to recharge with new amount for further usage.The customer is facing a problem with this new technology.The electricity theft is very common in Uganda according to the professionals. They are facing challenges in identifying the theft in real time. They are in need of a technology to identify the theft and inform the relevant officer to correct the system and for further action.\\
 
 
 
@@ -201,18 +223,25 @@ Table.~\ref{Tab1} explains how the cost differs on many factors\cite{umeme}.UMEM
 
 Lumingo has got an initial pilot project from Uganda government for the implementation of such power detectors to identify the power theft and also give the real time or near real time map of power outage in a region.This pilot project includes for 2 regions covering 220 houses with the YaKa device for the customer to get electricity and to monitor their usage and together power detectors for the grid owners to identify the power outage or power theft.\\
 
-The market for such power detectors in emerging markets is very high as the scenarios are very similar in most developing countries.So Lumingo started analyzing the cost and feasibility for the project implementation. Based on the cost for hardware per house and for the other integration hardware and software required the overall implementation cost is estimated. The power detectors works on the same principle as power adaptors wherein the AC High voltage is converted to the DC voltage with 3V or 5V and limited current. This information is transmitted by the transceivers at each house to the central gateway at each region. The Gateway is the piece of hardware which acts as the center of receiving and transmitting bulk data from all nodes in the region to the cloud. This is performed together with the GPRS module.
+The market for such power detectors in emerging markets is very high as the scenarios are very similar in most developing countries.So Lumingo started analyzing the cost and feasibility for the project implementation. Based on the cost for hardware per house and for the other integration hardware and software required the overall implementation cost is estimated. The power detectors works on the same principle as power adapters wherein the AC High voltage is converted to the DC voltage with 3V or 5V and limited current. This information is transmitted by the transceivers at each house to the central gateway at each region. The Gateway is the piece of hardware which acts as the center of receiving and transmitting bulk data from all nodes in the region to the cloud. This is performed together with the GPRS module.\\
 
 The cost for the power detectors will be around \$3 to \$5 based on the number of units being manufactured.The Gateway and GPRS hardware together will cost around \$60. Apart from these cost on field implementation cost needs to be considered and the cost for deploying the units at each house will be done together with the YaKa units.The business strategy here is to provide the hardware and service to the grid owners.The service include the maintenance and  cost for the GPRS module using the data from the network providers. Once the numbers are huge there can be a business collaboration with the network provider to minimize and better optimize the technology.\\
    
 Being one of the co founder of Lumingo, i have been involved in all stages of discussion within the company.I am mainly responsible for the hardware and embedded technologies. I have designed the power detector modules.I have also designed the Gateway module using Raspbery Pi2(\url{www.raspberrypi.org/}),FONA GPRS module and FIWARE as the cloud platform. The first prototype is ready and now i am working on making the next version of the product which will be a ready to deploy product i.e market ready. The FIWARE(\url{www.fiware.org}) cloud and front end will be taken care by the other co founder of our team.Together with this, the team has a marketing and financial guys who deals all other requirements of the startup.\\
 
-Once the Beta testing is done we will do the market launch i.e all these power detectors will be deployed in each house at the point of tracking device to check in near real time the power outage and usage.The complete process of operation needs to be optimized on field for making the system more reliable and this will be done by the end of October 2015.Additional features can be integrated with this system very easily with very less based on the customer requirement.The overall system can be used for different applications as such for monitoring the gas heaters about the electricity consumption.These business models are showing more positive responses in Estonia and still requires the contract to be signed.
+Once the Beta testing is done we will do the market launch i.e all these power detectors will be deployed in each house at the point of tracking device to check in near real time the power outage and usage.The complete process of operation needs to be optimized on field for making the system more reliable and this will be done by the end of October 2015.Additional features can be integrated with this system very easily with very less cost based on the customer requirement.The overall system can be used for different applications as such for monitoring the gas heaters about the electricity consumption.These business models are showing more positive responses in Estonia and still requires the contract to be signed.\\
+
+Another customer segment for the product is measuring the energy consumption of heaters at each house.Most of the heaters are  centralized  i.e it will be controlled from a central location.The billing for such heaters happen on an average scale for all the users.One of the customer at Estonia requested for the smart meters to measure the consumption of energy by individual users. This requires measuring the electricity consumed by gas meters at each house.Lumingo is now performing the feasibility study by analysing the cost and market for such devices.The data being collected differ from the power detectors but the other infrastructure like transceivers,Gateway and FIWARE will remain the same. The Front end application will be adapted based on the customer requirement. 
 
 \clearpage
 
 \section{Conclusion and Future work}
 
+Energy sector being very vast is still not that advanced in terms of technology integration.This is because of many such grids are being controlled by the government or publicly funded projects. Most of the private owned grids have integrated the advanced technologies to monitor and optimize the system performance.The present Machine to Machine interface which is booming is helping to make the system even more autonomous with less human effort.This provide the system administrator with useful features and spend less time in taking decisions.\\
+
+The challenges to enter these market is very high as it is very difficult to convince the ferasibility of the technology at early stage. There are numerous questions from the customer about the cost,reliability,operation cost etc which Lumingo has tried hard to answer and convince the customer.The initial assumptions we made inside our office were challenged from the customer surveys and inthe meetings. The mentors words at speedupeurope and at Sting have greatly helped us to align our concept to the market need.The product with minor modification is helping us to enter different sectors and to create value.\\
+
+As an Embedded engineer my focus is to research and show more reliable products which will help Lumingo to acquire new business in similar market.This focus in future will provide us with more contacts and profits which will enable us to function without any additional investors.The first pilot project is planned to be completed before the end of this year and with this successful implementation we will try to enter markets in other emerging markets like India,China etc. 
 
 
 
